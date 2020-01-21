@@ -1043,7 +1043,6 @@ func askZeroForEE() bool {
 
 // SubscribeForUpdates will listen for updates for the given group.
 func SubscribeForUpdates(prefixes [][]byte, cb func(kvs *badgerpb.KVList), group uint32) {
-	return
 	for {
 		// Connect to any of the group 1 nodes.
 		members := groups().AnyTwoServers(group)
